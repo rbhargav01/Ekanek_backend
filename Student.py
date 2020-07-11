@@ -42,4 +42,4 @@ for i in range(n):
     s=Student(inp[0],inp[1],inp[2],inp[3])
     input_array.append(s)
 sort_criteria=input().split()
-sort_function(input_array,sort_criteria)
+print(sort_function(input_array,sort_criteria))
