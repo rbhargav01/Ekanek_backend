@@ -4,7 +4,10 @@ class Student:
         self.age=age
         self.marks=marks
         self.rollNumber=rollNumber
-        
+
+#input_array: Array of Student objects
+#sort_criteria: List of strings ("name","age","marks","rollNumber" restricted to these values only)
+#sort_criteria can be given in any order but the input is case sensitive
 def sort_function(input_array,sort_criteria):
     temp=[]
     for i in range(len(input_array)):
