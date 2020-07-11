@@ -10,27 +10,27 @@ class Student:
 #sort_criteria can be given in any order but the input is case sensitive
 def sort_function(input_array,sort_criteria):
     temp=[]
-    for i in range(len(input_array)):   #Creating an empty array for each student
+    for i in range(len(input_array)):                       #Creating an empty array for each student
         temp.append([])
     for i in range(len(sort_criteria)+1):
         if(i==len(sort_criteria)):
-            for j in range(len(input_array)):   #Append the index of the each student at the end of jth row
+            for j in range(len(input_array)):               #Append the index of the each student at the end of jth row
                 temp[j].append(j)
             break
-        if(sort_criteria[i]=="name"):   #Add name of each student to the jth row as the ith element to be sorted
+        if(sort_criteria[i]=="name"):                       #Add name of each student to the jth row as the ith element to be sorted
             for j in range(len(input_array)):
                 temp[j].append(input_array[j].name)
-        if(sort_criteria[i]=="age"):    #Add age of each student to the jth row as the ith element to be sorted
+        if(sort_criteria[i]=="age"):                        #Add age of each student to the jth row as the ith element to be sorted
             for j in range(len(input_array)):
                 temp[j].append(input_array[j].age)
-        if(sort_criteria[i]=="marks"):  #Add marks of each student to the jth row as the ith element to be sorted
+        if(sort_criteria[i]=="marks"):                      #Add marks of each student to the jth row as the ith element to be sorted
             for j in range(len(input_array)):
                 temp[j].append(input_array[j].marks)
-        if(sort_criteria[i]=="rollNumber"): #Add rollNumber of each student to the jth row as the ith element to be sorted
+        if(sort_criteria[i]=="rollNumber"):                 #Add rollNumber of each student to the jth row as the ith element to be sorted
             for j in range(len(input_array)):
                 temp[j].append(input_array[j].rollNumber)
-    temp.sort() #Sorting the created array according to the given criteria
-    for i in range(len(temp)): #Adding the whole object as the answer instead of the specified criteria
+    temp.sort()                                             #Sorting the created array according to the given criteria
+    for i in range(len(temp)):                              #Adding the whole object as the answer instead of the specified criteria
         temp[i]=input_array[temp[i][-1]]
     return temp
 
