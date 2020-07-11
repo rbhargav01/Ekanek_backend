@@ -1,4 +1,7 @@
 import heapq
+#delhi_to_mumbai: list of integers
+#mumbai_to_delhi: list of integers
+#k: integer
 def k_cheap_flights(delhi_to_mumbai,mumbai_to_delhi,k):
     delhi_to_mumbai.sort()
     mumbai_to_delhi.sort()
