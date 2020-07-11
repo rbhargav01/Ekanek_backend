@@ -4,7 +4,7 @@ import heapq
 #k: integer
 def k_cheap_flights(delhi_to_mumbai,mumbai_to_delhi,k):
     
-    #If the given arrays are already sorted then the sorting functions are not necessary and the time complexity becomes = klog(k)
+    #If the given arrays are already sorted then the sorting functions are not necessary and the time complexity becomes = O(klog(k))
     
     delhi_to_mumbai.sort()                                                              #Sorting the given list of fares
     mumbai_to_delhi.sort()
